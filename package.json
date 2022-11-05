@@ -1,0 +1,14 @@
+{
+  "name": "template-express-node-ts",
+  "version": "1.0.0",
+  "description": "Teamplate with express, nodejs and typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Jose Vega",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.18.2"
+  }
+}

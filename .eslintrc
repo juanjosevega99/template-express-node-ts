@@ -3,12 +3,15 @@
     "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
+        "prettier"
     ],
     "parserOptions": {
         "ecmaVersion": 2018,
         "project": "./tsconfig.json"
     },
+    "plugins": ["prettier"],
     "rules": {
+        "prettier/prettier": ["error"],
         "semi": ["error", "always"],
         "object-curly-spacing": ["error", "always"],
         "camelcase": "off",

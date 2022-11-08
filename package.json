@@ -11,9 +11,7 @@
     "prepare": "husky install",
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint --fix src/**/*.ts",
-    "format": "prettier --write 'src/**/*.ts'",
-    "precommit": "npm run lint-fix && npm run format",
-    "prepush": "npm run lint"
+    "format": "prettier --write 'src/**/*.ts'"
   },
   "author": "Juan Jose Vega",
   "license": "ISC",

@@ -1,44 +1,49 @@
 {
+    "env": {
+        "es2021": true,
+        "node": true
+      },
     "parser": "@typescript-eslint/parser",
     "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended",
         "prettier"
     ],
     "parserOptions": {
-        "ecmaVersion": 2018,
-        "project": "./tsconfig.json"
+        "ecmaVersion": "latest",
+        "sourceType": "module"
     },
-    "plugins": ["prettier"],
+    "plugins": [
+        "@typescript-eslint",
+        "prettier"
+    ],
     "rules": {
         "prettier/prettier": ["error"],
-        "semi": ["error", "always"],
-        "object-curly-spacing": ["error", "always"],
-        "camelcase": "off",
-        "@typescript-eslint/explicit-function-return-type": "off",
-        "@typescript-eslint/no-explicit-any": 1,
-        "@typescript-eslint/no-inferrable-types": [
-            "warn",
-            {
-            "ignoreParameters": true
-            }
+        "no-empty": "error",
+        "no-multiple-empty-lines": "error",
+        "no-magic-numbers": "error",
+        "no-inline-comments": "error",
+        "no-mixed-spaces-and-tabs": "error",
+        "no-multi-spaces": "error",
+        "no-console": "error",
+        "no-unused-vars": "error",
+        "@typescript-eslint/no-unused-vars": "off",
+        "indent": [
+          "error",
+          2
         ],
-        "no-underscore-dangle": "off",
-        "no-shadow": "off",
-        "no-new": 0,
-        "@typescript-eslint/no-shadow": ["error"],
-        "@typescript-eslint/no-unused-vars": "warn",
-        "quotes": [2, "single", { "avoidEscape": true }],
-        "class-methods-use-this": "off",
-        "import/extensions": [
-            "error",
-            "ignorePackages",
-            {
-            "js": "never",
-            "jsx": "never",
-            "ts": "never",
-            "tsx": "never"
-            }
+        "linebreak-style": [
+          "error",
+          "unix"
+        ],
+        "quotes": [
+          "error",
+          "single"
+        ],
+        "semi": [
+          "error",
+          "never"
         ]
+      }
     }
-}

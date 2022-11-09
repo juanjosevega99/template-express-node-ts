@@ -1,5 +1,7 @@
-import express from "express";
+import express from 'express'
+
+import { config } from './config/index'
+import { Logger } from './utils/logger'
 
 const app = express()
-
-app.listen(() => console.info(`Server running at ${300}`))
+app.listen(() => Logger.info(`Server running at ${config.port}`))

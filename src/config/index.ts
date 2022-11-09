@@ -1,10 +1,8 @@
-import 'dotenv/config'
-import path from 'path'
+import * as dotenv from 'dotenv'
+dotenv.config()
 
 const { PORT } = process.env
 
 export const config = {
-    env: {
-        port: Number(PORT)
-    }   
+  port: Number(PORT)
 }

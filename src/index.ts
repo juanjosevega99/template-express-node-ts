@@ -1,7 +1,15 @@
 import express from 'express'
+import cors from 'cors'
 
 import { config } from './config/index'
+import { router } from './routes'
 import { Logger } from './utils/logger'
 
 const app = express()
-app.listen(() => Logger.info(`Server running at ${config.port}`))
+
+app.use(cors())
+app.use(express.json())
+
+router(app)
+
+app.listen(config.port, () => Logger.info(`Server running at ${config.port}`))

@@ -4,7 +4,7 @@
   "description": "Template with express, nodejs and typescript",
   "main": "index.js",
   "engines": {
-    "node": "16.13.2"
+    "node": "18.12.1"
   },
   "scripts": {
     "dev": "ts-node-dev src/index.ts",

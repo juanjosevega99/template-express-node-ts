@@ -7,7 +7,9 @@
     "node": "18.12.1"
   },
   "scripts": {
+    "start": "node ./dist/src/server.js",
     "dev": "ts-node-dev src/index.ts",
+    "build": "tsc",
     "prepare": "husky install",
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint --fix src/**/*.ts",
@@ -18,7 +20,7 @@
   "license": "ISC",
   "dependencies": {
     "cors": "2.8.5",
-    "express": "4.18.2",
+    "express": "4.18.2",    
     "winston": "3.8.2"
   },
   "devDependencies": {

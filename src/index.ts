@@ -12,4 +12,8 @@ app.use(express.json())
 
 router(app)
 
-app.listen(config.port, () => Logger.info(`Server running at ${config.port}`))
+app.listen(config.port, () =>
+  Logger.info(`Server running at http://localhost:${config.port}`)
+)
+
+export default app

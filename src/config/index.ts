@@ -4,5 +4,5 @@ dotenv.config()
 const { PORT } = process.env
 
 export const config = {
-  port: Number(PORT)
+  port: Number(PORT) || 4000
 }
